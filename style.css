@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 1080px;
+  height: 1920px;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  background-color: white;
+}
+
+.card {
+  border: none;
+}
+
+.card .card-body {
+  padding: 0;
+}
+
+.top-brand-name .logo {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.creative-title {
+  font-size: 11px;
+  line-height: 100%;
+  font-weight: 400;
+  text-align: center;
+  color: #000;
+  font-family: "Inter", sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 0px;
+}
+
+.creative-del-discount {
+  font-family: "Inter", sans-serif;
+  text-decoration: line-through;
+  color: #b2b2b2;
+  font-size: 12.83px;
+  display: block;
+  font-weight: 600;
+  text-align: center;
+}
+
+.creative-price {
+  font-family: "Inter", sans-serif;
+  color: #000;
+  font-size: 12.83px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.image-wrapper video {
+  margin-bottom: 2px;
+  width: 100%;
+}
+
+.col-auto {
+  width: 135px;
+  border: 2px solid #dfe4ec;
+  border-radius: 6px;
+  margin: auto;
+}
+
+
+#random-product-4 .image-border-rotation {
+  transition: border-color 0.5s ease, transform 0.1s ease;
+  
+}
+
+#random-product-4 .image-border-rotation .image-wrapper {
+  overflow: hidden; 
+}
+
+#random-product-4 .image-border-rotation.active-border {
+  border-image: linear-gradient(to right,red, orange,  blue);
+  border-image-slice: 1; 
+  overflow: hidden; 
+  border-radius: 10px !important;
+}
+
+/* #random-product-4 .image-border-rotation.active-border .image-wrapper video {
+  transform: scale(1.10);
+} */
+
+#random-product-4 .image-wrapper video {
+  transition: transform 0.3s ease;
+
+}

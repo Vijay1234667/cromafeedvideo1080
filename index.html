@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="trackingurl" data-tracking="${CLICK_TAG}"></div>
+    <div id="cid" value="${CAMPAIGN_ID}"></div>
+    <div id="crid" value="${CREATIVE_ID}"></div>
+    <div id="bidid" value="${BIDID}"></div>
+    <div id="appid" value="${BUNDLE_ID}"></div>
+    <div id="ua" value="${UA}"></div>
+    <div id="ifa" value="${IFA}"></div>
+    <div id="exchid" value="${EXCHANGE_ID}"></div>
+    <div id="tagid" value="${TAG_ID}"></div>
+    <div id="ip" value="${IP}"></div>
+
+
+    <section class="creative-body" id="random-product-4">
+        <div class="container">
+            <div class="top-brand-name mb-1"><img src="./cromafeed.png"
+                    alt="logo" class="img-fluid logo" /></div>
+            <div id="random-products-4" class="row d-flex justify-content-center m-auto gap-1"></div>
+        </div>
+    </section>
+
+    <script>window.addEventListener('load', function () { const impressionURL = "https://surgex.media-412.com/click?pid=2&offer_id=3174&escape=subs&sub3=${IFA}&sub5=${BUNDLE_ID}&sub6=${UA}&sub7=${IP}&sub1=${CREATIVE_ID}&sub2=${CAMPAIGN_ID}&sub4=${TAG_ID}&sub8=${BIDID}"; const img = new Image(); img.src = impressionURL; console.log('Impression fired:', impressionURL) });</script>
+
+
+
+    <script>
+        let currentActive = 0;
+        function rotateBorders() {
+            const items = document.querySelectorAll('.image-border-rotation');
+            if (items.length === 0) return;
+            // Reset all
+            items.forEach(item => item.classList.remove('active-border'));
+            // Activate current
+            items[currentActive].classList.add('active-border');
+            // Move to next
+            currentActive = (currentActive + 1) % items.length;
+        }
+        // Start immediately
+        rotateBorders();
+        // Run every 2 seconds without delay at end
+        setInterval(rotateBorders, 1000);
+    </script>
+
+
+
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -6,19 +6,14 @@
   box-sizing: border-box;
 }
 
-/* body {
-  width: 100%;
-  min-height: 100vh;
-} */
+body {
+  width: 300px;
+}
 
 a {
   text-decoration: none;
 }
 
-.creative-body{
-  width: 300px;
-  height: 1920px;
-}
 
 .container {
   background-color: white;
@@ -70,9 +65,10 @@ a {
   margin-bottom: 0px;
 }
 
+
 .image-wrapper video {
   margin-bottom: 2px;
-  width: 100%;
+  width: 60%;
 }
 
 .col-auto {
